@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Krishnam Sai Varun Reddy - AI & Software Developer" />
+  <title>Krishnam Sai Varun Reddy | AI Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/profile photo.jpg" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress"></div>
+
+  <header id="top">
+    <nav class="container">
+      <h1 class="logo">sai varun reddy</h1>
+
+      <button id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="gradient-bg">
+      <div class="container hero-content">
+        <img src="assets/profile photo.jpg" alt="Profile Photo" class="profile-pic"/>
+        <h2>Hello, I'm <span class="highlight">Krishnam Sai Varun Reddy</span></h2>
+        <p class="typewriter" data-text='AI & Data Science Postgraduate | Software Developer | ML/DL | NLP | Generative AI'></p>
+        <div class="hero-actions">
+          <a href="assets/KRISHNAMSAIVARUNREDDY_RESUME.pdf" download class="btn primary">Download Resume</a>
+          <a href="#projects" class="btn ghost">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="reveal">
+          Motivated and detail-oriented AI and Data Science postgraduate student at Mahindra University with strong proficiency
+          in Python, SQL, Machine Learning, Deep Learning, and Natural Language Processing. Experienced in using tools and
+          frameworks such as TensorFlow, Keras, OpenCV, and Hugging Face for developing end-to-end data-driven solutions.
+          Contributed to impactful academic projects including skin lesion classification using Vision Transformers and cognitive
+          disease prediction through NLP pipelines. Served as a Teaching Assistant, demonstrating strong leadership,
+          communication, and mentoring skills. Passionate about applying AI to real-world challenges through innovative, scalable,
+          and ethical solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <ul class="timeline reveal">
+          <li>
+            <h3>Mahindra University — M.Tech in AI & Data Science</h3>
+            <span class="meta">Aug 2023 – Jun 2025 • CGPA: 74% • Hyderabad, Telangana</span>
+          </li>
+          <li>
+            <h3>Madanapalle Institute of Technology and Science — B.Tech in ECE</h3>
+            <span class="meta">Jun 2019 – Jun 2023 • CGPA: 7.77 • Madanapalle, Andhra Pradesh</span>
+          </li>
+          <li>
+          <h3>Chaitanya Junior College — Senior Secondary (XII)</h3>
+          <span class="meta">Jul 2017 – May 2019 • CGPA: 8.2</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="card reveal">
+          <h3>Teaching Assistant — Mahindra University</h3>
+          <span class="meta">Hyderabad, Telangana • Aug 2023 – Present</span>
+          <ul>
+            <li>Supported students in learning AI and data science concepts.</li>
+            <li>Assisted professors with course material and grading.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <!-- Filters -->
+        <div class="filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+          <button class="filter-btn" data-filter="nlp">NLP</button>
+          <button class="filter-btn" data-filter="ece">ECE / VLSI</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal" data-tags="ai-ml">
+            <h3>Skin Lesion Classification Using Transfer Learning with VGG16-CBAM and ResNet50</h3>
+            <ul>
+              <li><strong>Technologies:</strong> Python, TensorFlow, Keras, OpenCV, NumPy</li>
+              <li>Utilized pre-trained VGG16 and ResNet50 models with CBAM attention and data augmentation to classify non-malignant skin lesions.</li>
+              <li>Improved classification accuracy and interpretability by highlighting critical features relevant to early diagnosis.</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai-ml">
+          <h3>Enhancing Early Diagnosis of Non-Malignant Skin Lesions through Vision Transformer Image Analysis</h3>
+            <ul>
+              <li><strong>Technologies:</strong> Python, Transformers, PyTorch, scikit-learn, OpenCV</li>
+              <li>Implemented Vision Transformer (ViT) using the google/vit-base-patch16-224 checkpoint to classify dermatological images.</li>
+              <li>Leveraged transformer-based architecture to improve accuracy and inference efficiency in medical image classification.</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="nlp ai-ml">
+            <h3>NLP Enabled Cognitive Disease Prediction Model</h3>
+            <ul>
+              <li><strong>Technologies:</strong> Python, BERT, Hugging Face Transformers, scikit-learn, SVM</li>
+              <li>Built a lightweight model to predict dyslexia from handwriting-derived text using BERT embeddings and SVM.</li>
+              <li>Processed handwritten text for feature extraction to enable early-stage cognitive disease screening.</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai-ml">
+            <h3>Skin Disease Classification with ADASYN + SMOTE Using VGG16 and ResNet50</h3>
+            <ul>
+              <li><strong>Technologies:</strong> Python, TensorFlow, Keras, scikit-learn, imbalanced-learn, NumPy, Matplotlib</li>
+              <li>Implemented a hybrid oversampling approach combining ADASYN and SMOTE to balance a 15-class imbalanced skin disease dataset.</li>
+              <li>Used pre-trained VGG16 and ResNet50 models for deep feature extraction and trained a dense neural network classifier on the balanced dataset.</li>
+              <li>Achieved improved classification accuracy and robustness across minority classes, validated with precision, recall, F1-score, and confusion matrix.</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="ece">
+            <h3>Design of 256 Bytes 10T SRAM for Low Power Applications</h3>
+            <ul>
+              <li><strong>Technologies:</strong> HSPICE, Cadence, 22nm Technology Node</li>
+              <li>Designed a 256-byte PROP10T SRAM cell optimized for low power consumption and stability.</li>
+              <li>Evaluated design parameters through Monte Carlo simulations using HSPICE at the 22nm node.</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="ece">
+            <h3>Design and Implementation of CMOS NAND Gate Using HSPICE</h3>
+            <ul>
+              <li><strong>Technologies:</strong> HSPICE, CMOS Design, Digital Logic Analysis</li>
+              <li>Analyzed various multi-input CMOS NAND gate designs to evaluate propagation delay and power efficiency.</li>
+              <li>Compared implementation metrics to determine optimal design configurations for digital circuit performance.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-section">
+
+          <article class="skill-category reveal">
+            <h3>Programming Languages</h3>
+            <div class="skills-grid">
+              <span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>Data Science & AI</h3>
+            <div class="skills-grid">
+              <span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+              <span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>scikit-learn</span>
+              <span>PySpark</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>Generative AI</h3>
+            <div class="skills-grid">
+              <span>LangChain</span><span>RAG</span><span>AI Agents</span><span>Hugging Face</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>Web Development</h3>
+            <div class="skills-grid">
+              <span>Flask</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>DevOps & Version Control</h3>
+            <div class="skills-grid">
+              <span>Docker</span><span>Git</span><span>GitHub</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>Database Technologies</h3>
+            <div class="skills-grid">
+              <span>SQL</span><span>DBMS</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>Systems & Networking</h3>
+            <div class="skills-grid">
+              <span>Networking Technologies</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>Tools</h3>
+            <div class="skills-grid">
+              <span>Postman</span><span>Test Rigor</span>
+            </div>
+          </article>
+
+          <article class="skill-category reveal">
+            <h3>Languages</h3>
+            <div class="skills-grid">
+              <span>Telugu (Native)</span><span>English (Professional)</span><span>Hindi</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="cert-list reveal">
+          <li>AI For Everyone — Coursera (University of Michigan), Jun 2021</li>
+          <li>Soft Skills Development — NPTEL (IIT Roorkee), Aug 2022</li>
+          <li>MATLAB Onramp — MathWorks, Nov 2021</li>
+          <li>Crash Course on Python — Google (Coursera), Jun 2022</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="card reveal">
+          <p><strong>Email:</strong> <a href="mailto:krishnamsaivarunreddy@gmail.com">krishnamsaivarunreddy@gmail.com</a></p>
+          <p><strong>Alternate:</strong> se23maid008@mahindrauniversity.edu.in</p>
+          <p><strong>Phone:</strong> <a href="tel:+916309441631">+91 6309441631</a></p>
+          <p><strong>LinkedIn:</strong> <a target="_blank" href="https://www.linkedin.com/in/sai-varun-reddy-krishnam-80b11b227/">linkedin.com/in/sai-varun-reddy-krishnam-80b11b227/</a></p>
+          <p><strong>Location:</strong> Hyderabad, Telangana</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Krishnam Sai Varun Reddy</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
